@@ -2,8 +2,8 @@ object formMain: TformMain
   Left = 0
   Top = 0
   Caption = 'formMain'
-  ClientHeight = 627
-  ClientWidth = 1051
+  ClientHeight = 542
+  ClientWidth = 788
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,8 +15,8 @@ object formMain: TformMain
   object PageControl1: TPageControl
     Left = 0
     Top = 0
-    Width = 1051
-    Height = 627
+    Width = 788
+    Height = 542
     Align = alClient
     TabOrder = 0
     ExplicitWidth = 1047
@@ -58,11 +58,18 @@ object formMain: TformMain
         Caption = 'Variant 6'
         OnClick = Variant61Click
       end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object Exit1: TMenuItem
+        Caption = 'Exit'
+        OnClick = Exit1Click
+      end
     end
   end
   object dialogOpenDocs: TOpenDialog
     Filter = 'Zip Files (*.zip)|*.zip'
-    Left = 520
-    Top = 328
+    Left = 120
+    Top = 152
   end
 end

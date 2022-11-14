@@ -31,6 +31,8 @@ type
     Variant51: TMenuItem;
     Variant61: TMenuItem;
     dialogOpenDocs: TOpenDialog;
+    N2: TMenuItem;
+    Exit1: TMenuItem;
     procedure Variant11Click(Sender: TObject);
     procedure Variant21Click(Sender: TObject);
     procedure Variant31Click(Sender: TObject);
@@ -38,6 +40,7 @@ type
     procedure Variant51Click(Sender: TObject);
     procedure Variant61Click(Sender: TObject);
     procedure Open1Click(Sender: TObject);
+    procedure Exit1Click(Sender: TObject);
   private
     { Private declarations }
     function OpenDocumentation(const FileName: string; const StartPage: string): TEdgeBrowser;
@@ -70,6 +73,11 @@ begin
   var browser := OpenDocumentation(FileName, '');
   browser.OnNavigationCompleted := NavigationComplete;
   Result := browser;
+end;
+
+procedure TformMain.Exit1Click(Sender: TObject);
+begin
+  Close;
 end;
 
 function TformMain.GetTicketJS(out A: TList<string>): Boolean;
