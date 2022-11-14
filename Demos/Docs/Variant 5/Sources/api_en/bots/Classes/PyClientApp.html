@@ -1,0 +1,139 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PyClientApp - KBEngine bots</title>
+<link href="../../style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr><td align=left style="background:#708090"> <font size=15 color=#ffffff> KBEngine </font></td></tr>
+</table> <hr>
+<h1>PyClientApp class</h1>
+
+<p style="text-align: center;"><span class="module_h1">[<a href="../Modules/KBEngine.html" class="module_h1">KBEngine module</a>]</span></p>
+<p>PyClientApp is a part of the <a href="../Modules/KBEngine.html">KBEngine</a> 
+Module. It is is client object created when a client is simulated from 
+the bottom of C++. It cannot be created in the script layer directly.</p>
+
+<h2><a href="#" onClick="obj=document.getElementById( 'functions' );vis = (obj.style.display == 'none') ? 'block' : 'none'; obj.style.display = vis; return false;" class="h2">Member functions</a></h2>
+<table id="functions" cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr><td>
+<span class="function_list">def <a href="#getSpaceData" class="function_list" >getSpaceData</a>( key ):</span>
+</td></tr>
+
+<tr><td>
+<span class="function_list">def <a href="#player" class="function_list" >player</a>( ):</span>
+</td></tr>
+
+</table>
+
+<h2><a href="#" onClick="obj=document.getElementById( 'callbacks' );vis = (obj.style.display == 'none') ? 'block' : 'none'; obj.style.display = vis; return false;" class="h2">Callbacks</a></h2>
+<table id="callbacks" cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+</table>
+
+<h2><a href="#" onClick="obj=document.getElementById( 'attributes' );vis = (obj.style.display == 'none') ? 'block' : 'none'; obj.style.display = vis; return false;" class="h2">Attributes</a></h2>
+<table id="attributes" cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+
+<tr valign=top><td><a href="#id" class="attribute_list" >id</a></td><td>&nbsp; Read-only Integer
+</td></tr>
+
+<tr valign=top><td><a href="#entities" class="attribute_list" >entities</a></td><td>&nbsp; <a href="Entities.html">Entities</a>
+
+</table>
+
+<hr>
+<a name="detailed_description"></a><h2>A detailed description</h2>
+Instances of class <a href=../../keywords.html#entity>Entity</a> represent 
+game objects on the client.
+<br><br>
+
+<br><br>
+An <a href=../../keywords.html#entity>Entity</a> can access its equivalent 
+entities in the base and cell applications via <a href=../../keywords.html#EntityCall>ENTITYCALL</a>. 
+This requires a set of remotely-invoked functions (specified in the entity's .def file).
+
+<hr>
+<h2>Member functions documentation</h2>
+
+<a name="getSpaceData"></a><p class="function_definition">
+<span class="function_definition">def getSpaceData( <i>key </i> ):</span>
+</p>
+
+<div class="function_description">
+<b>Function description:</b><br><br>
+Get the space data of the specified key.
+<br>
+The space data is set by the user on the server through <a href=../../cellapp/Modules/KBEngine.html#setSpaceData>setSpaceData</a>.
+</div>
+
+<p>
+<span class="function_parameter">parameters:</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+
+<tr valign=top><td><span class="function_parameter_name"><i>key</i></span></td><td><span class="function_parameter_description">
+string, a string keyword.
+</span></td></tr>
+</table>
+</p>
+
+<p>
+<span class="function_return">returns:</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td>
+string, string data for the key
+</td></tr>
+</table>
+</p>
+
+
+
+<a name="player"></a><p class="function_definition">
+<span class="function_definition">def player( <i></i> ):</span>
+</p>
+
+<div class="function_description">
+<b>Function description</b><br><br>
+Gets the entity that the current client controls.<br>
+<br>
+</div>
+
+
+
+
+<hr>
+<h2>Callback functions documentation</h2>
+
+
+
+
+
+<hr>
+<h2>Attributes documentation</h2>
+
+<a name="entities"></a><p class="attribute_definition">
+<span class="attribute_definition">entities</span>
+</p>
+
+<div class="attribute_description">
+<b>Description:</b><br><br>
+entities is a dictionary object that contains all the entities in the 
+current process.<br>
+</div>
+
+<p>
+<span class="attribute_type">Types:</span>
+<table border=0 cellpadding=0 cellspacing=3 style="margin-left: 20px;">
+<tr><td><a href="Entities.html">Entities</a>
+</td></tr>
+</table>
+</p>
+
+
+
+<hr>
+<p class="copyrightFooter">Copyright KBEngine</p>
+</body>
+</html>
