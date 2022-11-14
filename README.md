@@ -1,7 +1,7 @@
 # EdgeZipServer
 
 ## What's this
-PoC of my way of storing and organizing a static html files in zip archive and displaying it in your application by using the special wrapper `TEdgeZipServer` over the control/class `TEdgeBrowser`.
+PoC of my way of storing and organizing a static html files in zip archive and displaying it in Delphi application by using the special wrapper `TEdgeZipServer` over the control `TEdgeBrowser`.
 
 ## How it works
 Library handles `TCustomEdgeBrowser.OnWebResourceRequested` request and loads files from ZIP archive you specified.
