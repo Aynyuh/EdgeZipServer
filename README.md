@@ -7,7 +7,7 @@ PoC of my way of storing and organizing a static html files in zip archive and d
 Library handles `TCustomEdgeBrowser.OnWebResourceRequested` request and loads files from ZIP archive you specified.
 
 ## What's next?
-Nothing, it's just proof-of-concept. For building amazing and advanced html-based UI use the great [HTML Component Library](https://delphihtmlcomponents.com/).
+Nothing, it's just proof-of-concept. For building really amazing and advanced html-based UI use the great [HTML Component Library](https://delphihtmlcomponents.com/).
 
 ## How to use
 * (optional) Make sure your dev environment is ready to use Chromium-based Edge WebView2 browser. Use Embarcadero guide [Using TEdgeBrowser Component and Changes to the TWebBrowser Component](https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Using_TEdgeBrowser_Component_and_Changes_to_the_TWebBrowser_Component) as a start point.
