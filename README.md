@@ -8,6 +8,10 @@ Library handles `TCustomEdgeBrowser.OnWebResourceRequested` request and loads fi
 
 ## How to use
 * (optional) Make sure your dev environment is ready to use Chromium-based Edge WebView2 browser. Use Embarcadero guide [Using TEdgeBrowser Component and Changes to the TWebBrowser Component](https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Using_TEdgeBrowser_Component_and_Changes_to_the_TWebBrowser_Component) as a start point.
+* Write html-based help and add it to ZIP file. You can use any program like 7-Zip or WinRar. You also can use helper PowerShell script [make-archive.ps1](Tools/make-archive.ps1) to zip any folder:
+``` PowerShell
+PS C:\Projects\EdgeZipServer> .\Tools\make-archive.ps1 -SourceFolder '.\Demos\Docs\Variant 1\' -OutputFileName '.\Demos\Docs\Varian 1.zip'
+```
 * Link [UEdgeBrowserZipServer.pas](Library/UEdgeBrowserZipServer.pas) file in your project and assign class `TEdgeZipServer` to any `TEdgeBrowser` control.
 * Copy file [](Vendor/WebView2Loader.dll) to your exe output folder.
 
