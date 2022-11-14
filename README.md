@@ -1,13 +1,13 @@
 # EdgeZipServer
 
 ## What's this
-PoC of my way of storing and organizing a html documentation in zip archive and displaying it in your application by using TEdgeBrowser wrap class `TEdgeZipServer`.
+PoC of my way of storing and organizing a html documentation in zip archive and displaying it in your application by using the wrapper `TEdgeZipServer` over the control/class `TEdgeBrowser`.
 
 ## How it works
 Library handles `TCustomEdgeBrowser.OnWebResourceRequested` request and loads files from ZIP archive you specified.
 
 ## How to use
-* Prepare your dev environment by Embarcadero guide [Using TEdgeBrowser Component and Changes to the TWebBrowser Component](https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Using_TEdgeBrowser_Component_and_Changes_to_the_TWebBrowser_Component).
+* Make sure your dev environment is ready to use Chromium-based Edge WebView2 browser. Use Embarcadero guide [Using TEdgeBrowser Component and Changes to the TWebBrowser Component](https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Using_TEdgeBrowser_Component_and_Changes_to_the_TWebBrowser_Component) as a start point.
 * Link [UEdgeBrowserZipServer.pas](Library/UEdgeBrowserZipServer.pas) file in your project and assign class `TEdgeZipServer` to any `TEdgeBrowser` control.
 
 ## Demos
