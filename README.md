@@ -6,6 +6,9 @@ PoC of my way of storing and organizing a static html files in zip archive and d
 ## How it works
 Library handles `TCustomEdgeBrowser.OnWebResourceRequested` request and loads files from ZIP archive you specified.
 
+## What's next?
+Nothing, it's just proof-of-concept. For building amazing and advanced html-based interfaces use great [HTML Component Library](https://delphihtmlcomponents.com/).
+
 ## How to use
 * (optional) Make sure your dev environment is ready to use Chromium-based Edge WebView2 browser. Use Embarcadero guide [Using TEdgeBrowser Component and Changes to the TWebBrowser Component](https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Using_TEdgeBrowser_Component_and_Changes_to_the_TWebBrowser_Component) as a start point.
 * Write html-based help and add it to ZIP file. You can use any program like 7-Zip or WinRar. You also can use helper PowerShell script [make-archive.ps1](Tools/make-archive.ps1) to zip any folder:
