@@ -12,8 +12,15 @@ Library handles `TCustomEdgeBrowser.OnWebResourceRequested` request and loads fi
 ``` PowerShell
 PS C:\Projects\EdgeZipServer> .\Tools\make-archive.ps1 -SourceFolder '.\Demos\Docs\Variant 1\' -OutputFileName '.\Demos\Docs\Varian 1.zip'
 ```
-* Link [UEdgeBrowserZipServer.pas](Library/UEdgeBrowserZipServer.pas) file in your project and assign class `TEdgeZipServer` to any `TEdgeBrowser` control.
-* Copy file [](Vendor/WebView2Loader.dll) to your exe output folder.
+* Link [UEdgeBrowserZipServer.pas](Library/UEdgeBrowserZipServer.pas) file in your project and assign class `TEdgeZipServer` to any `TEdgeBrowser` control:
+``` Delphi
+  var zipFile := TZipFile.Create;
+  zipFile.Open('..\..\..\Docs\Variant 1.zip', TZipMode.zmRead);
+
+  edgeServer := TEdgeZipServer.Create(zipFile, EdgeBrowser1, '*://contoso.com/*');
+  EdgeBrowser1.Navigate('http://contoso.com/');
+```
+* Copy file [WebView2Loader.dll](Vendor/WebView2Loader.dll) to your exe output folder.
 
 ## Demos
 Check out [Demos](Demos/) folder for examples of usage. 
