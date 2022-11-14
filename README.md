@@ -7,4 +7,4 @@ My PoC of idea of storing and organizing the html documentation and handling it 
 Library handles `TCustomEdgeBrowser.OnWebResourceRequested` request and loading files from ZIP archive you specified.
 
 ## Demo
-[](/Demos/Demo1.gif)
+[](Demos/Demo1.gif)
