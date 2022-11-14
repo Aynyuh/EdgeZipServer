@@ -2,8 +2,8 @@ object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Form2'
-  ClientHeight = 667
-  ClientWidth = 994
+  ClientHeight = 666
+  ClientWidth = 990
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,12 +16,12 @@ object Form2: TForm2
   object EdgeBrowser1: TEdgeBrowser
     Left = 0
     Top = 0
-    Width = 994
-    Height = 667
+    Width = 990
+    Height = 666
     Align = alClient
     TabOrder = 0
     UserDataFolder = '%LOCALAPPDATA%\bds.exe.WebView2'
-    ExplicitWidth = 624
-    ExplicitHeight = 441
+    ExplicitWidth = 986
+    ExplicitHeight = 665
   end
 end

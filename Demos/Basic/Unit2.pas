@@ -40,6 +40,7 @@ begin
   if (edgeServer.ZipFile.Mode <> TZipMode.zmClosed) then
     edgeServer.ZipFile.Close;
 
+  edgeServer.ZipFile.Destroy;
   edgeServer.Destroy;
 end;
 
