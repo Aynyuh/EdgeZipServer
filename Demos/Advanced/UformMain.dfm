@@ -19,8 +19,8 @@ object formMain: TformMain
     Height = 542
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 1047
-    ExplicitHeight = 626
+    ExplicitWidth = 784
+    ExplicitHeight = 541
   end
   object MainMenu1: TMainMenu
     Left = 104

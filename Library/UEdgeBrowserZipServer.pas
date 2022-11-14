@@ -17,10 +17,10 @@ uses
 
 type
   TEdgeZipServer = class
-  strict private const
+  private const
     sSlash = '\';
     sBackSlash = '/';
-  strict private
+  private
     FEdgeBrowser: TCustomEdgeBrowser;
     FZipFile: TZipFile;
     FMimeTypes: TMimeTypes;
